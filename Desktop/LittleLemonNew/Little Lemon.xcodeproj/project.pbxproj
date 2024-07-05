@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16125AE02C357BB200A496A9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16125ADF2C357BB200A496A9 /* Home.swift */; };
 		165CD0A32C21B27500C07AFB /* Little_LemonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165CD0A22C21B27500C07AFB /* Little_LemonApp.swift */; };
-		165CD0A52C21B27500C07AFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165CD0A42C21B27500C07AFB /* ContentView.swift */; };
 		165CD0A72C21B27800C07AFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165CD0A62C21B27800C07AFB /* Assets.xcassets */; };
 		165CD0AA2C21B27800C07AFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165CD0A92C21B27800C07AFB /* Preview Assets.xcassets */; };
-		165CD0B52C21B74000C07AFB /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165CD0B42C21B73F00C07AFB /* Restaurant.swift */; };
+		165CD0B52C21B74000C07AFB /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165CD0B42C21B73F00C07AFB /* Onboarding.swift */; };
+		167CE4AC2C3367C0009392C4 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CE4AB2C3367C0009392C4 /* Menu.swift */; };
+		167CE4AE2C339487009392C4 /* SelectedModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CE4AD2C339487009392C4 /* SelectedModal.swift */; };
+		16C7F6BD2C377E660015CB67 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C7F6BC2C377E660015CB67 /* UserProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16125ADF2C357BB200A496A9 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		165CD09F2C21B27500C07AFB /* Little Lemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Little Lemon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		165CD0A22C21B27500C07AFB /* Little_LemonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Little_LemonApp.swift; sourceTree = "<group>"; };
-		165CD0A42C21B27500C07AFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		165CD0A62C21B27800C07AFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		165CD0A92C21B27800C07AFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		165CD0B42C21B73F00C07AFB /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		165CD0B42C21B73F00C07AFB /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		167CE4AB2C3367C0009392C4 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		167CE4AD2C339487009392C4 /* SelectedModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedModal.swift; sourceTree = "<group>"; };
+		16C7F6BC2C377E660015CB67 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				165CD0A22C21B27500C07AFB /* Little_LemonApp.swift */,
-				165CD0A42C21B27500C07AFB /* ContentView.swift */,
-				165CD0B42C21B73F00C07AFB /* Restaurant.swift */,
+				165CD0B42C21B73F00C07AFB /* Onboarding.swift */,
+				16C7F6BC2C377E660015CB67 /* UserProfile.swift */,
+				16125ADF2C357BB200A496A9 /* Home.swift */,
+				167CE4AB2C3367C0009392C4 /* Menu.swift */,
+				167CE4AD2C339487009392C4 /* SelectedModal.swift */,
 				165CD0A62C21B27800C07AFB /* Assets.xcassets */,
 				165CD0A82C21B27800C07AFB /* Preview Content */,
 			);
@@ -140,9 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				165CD0A52C21B27500C07AFB /* ContentView.swift in Sources */,
+				167CE4AE2C339487009392C4 /* SelectedModal.swift in Sources */,
 				165CD0A32C21B27500C07AFB /* Little_LemonApp.swift in Sources */,
-				165CD0B52C21B74000C07AFB /* Restaurant.swift in Sources */,
+				16C7F6BD2C377E660015CB67 /* UserProfile.swift in Sources */,
+				16125AE02C357BB200A496A9 /* Home.swift in Sources */,
+				167CE4AC2C3367C0009392C4 /* Menu.swift in Sources */,
+				165CD0B52C21B74000C07AFB /* Onboarding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
