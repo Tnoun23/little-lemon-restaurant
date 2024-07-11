@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuList:  Decodable{   //JSONMenu
+struct MenuList:  Codable {   //JSONMenu
     let menu: [MenuItem]
 }
 //    View {

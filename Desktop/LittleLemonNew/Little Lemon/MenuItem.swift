@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuItem: Decodable, Identifiable{
+struct MenuItem: Codable, Identifiable{
     var id = UUID()
     let title: String
     let image: String

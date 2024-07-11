@@ -11,25 +11,40 @@ import CoreData
 struct Menu: View {
     
     @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(
-            sortDescriptors: AAA,
-            predicate: BBB,
-            [NSSortDescriptor(keyPath: \Dish.title,
-                              ascending: true,
-                              selector: #selector(NSString.localizedCaseInsensitiveCompare))],
-            animation: .default)
+//    @FetchRequest(
+//
+//        fetchRequest: [NSSortDescriptor(keyPath: \Dish.title,
+//                              ascending: true
+//                 //             selector: #selector(NSString.localizedCaseInsensitiveCompare)
+//                                       )],
+//            animation: .default)
            private var dishes: FetchedResults<Dish>
     
-//    func buildSortDescriptors(){
-//
-//    }
+    func buildSortDescriptors() -> [NSSortDescriptor]{
+        [
+            NSSortDescriptor(
+            key: "title", ascending: true,
+            selector: #selector(NSString.localizedCaseInsensitiveCompare)
+            ),
+            NSSortDescriptor(
+            key: "image", ascending: true,
+            selector: #selector(NSString.localizedCaseInsensitiveCompare)
+            )
+        ]
+    }
+    
+    
+    
     func getMenuData(_ coreDataContext:NSManagedObjectContext) async {
         PersistenceController.shared.clear()
 
-        
+
         let url = URL(string: "https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/menu.json")!
         
+        @State var menuItems = [MenuItem]()
+        
         let request = URLRequest(url: url)
+       //let urlSession = URLSession.shared.dataTask(with: request)
         let urlSession = URLSession.shared
 
         
@@ -40,10 +55,10 @@ struct Menu: View {
         }
         catch {}
         
-        menuItems?.menu.forEach{ menuItem in
+        menuItems.forEach{ menuItem in
             let dish = Dish(context: viewContext)
             dish.title = menuItem.title
-            dish.description = menuItem.description
+            dish.desc = menuItem.description
             dish.image = menuItem.image
             dish.category = menuItem.category
             dish.id = menuItem.id
@@ -65,21 +80,7 @@ struct Menu: View {
             if let url{
                 let menuitems = try? JSONDecoder().decode(MenuList.self, from: url)
             }
-            
-//            for menuItem in menuItems {
-//
-//                let newDish = MenuItem(from: <#T##any Decoder#>)
-//               newDish.title = menuItem.title
-//                if let price = Float(menuItem.price) {
-//                    newDish.price = price
-//                }
-//                newDish.description = menuItem.description
-//                newDish.image = menuItem.image
-//                newDish.category = newDish.category
-//                newDish.id = newDish.id
-//            }
-//            try? viewContext.save()
- //       }
+        }
         dataTask.resume()
     }
         @State var showModal = false
@@ -195,7 +196,8 @@ struct Menu: View {
                             Text(dish.title!)
                             //("Title: \(dish.title), price: \(price), \(category)")
                             AsyncImage(url: URL(string: "https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/menu.json")){ image in
-                                image.resizable()
+                               // image
+                                    //.resizable()
                             }
                             .frame(width: 50, height: 50)
                     }
@@ -204,11 +206,12 @@ struct Menu: View {
 
             }
 .onAppear(){
-                Menu.getMenuData()
+    Menu.getMenuData(menuItems: [MenuItem]())
             }
         }
     }
 }
+    
 extension String: Identifiable{
     public var id: String {
         self
