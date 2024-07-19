@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuItem: Codable, Identifiable{
+struct MenuItem1: Decodable, Identifiable{
     var id = UUID()
     let title: String
     let image: String
@@ -15,12 +15,7 @@ struct MenuItem: Codable, Identifiable{
     let description: String
     let category: String
 }
-//    View {
-//    var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-//    }
-//}
 
-//#Preview {
-//    MenuItem()
-//}
+struct MenuList1:  Decodable {  //MenuSection
+    let menu: [MenuItem1]
+}

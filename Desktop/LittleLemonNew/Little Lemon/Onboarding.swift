@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-    
-//    let firstName1 = "Jane"
-//    let lastName1 = "Doe"
-//    let email1 = "JnDoe@email.com"
 
 let defaults = UserDefaults.standard
 
@@ -25,9 +21,6 @@ struct Onboarding: View {
     var body: some View {
         NavigationStack{
             VStack{
-//                                NavigationLink(destination: Home(), isActive: $isLoggedIn) {
-//                                    EmptyView()
-//                                }
                 
                 TextField("First Name", text: $firstName)
                 TextField("Last Name", text: $lastName)

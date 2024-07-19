@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		16125AE02C357BB200A496A9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16125ADF2C357BB200A496A9 /* Home.swift */; };
+		161ABEC62C420EBF00DDC889 /* Menu1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161ABEC52C420EBF00DDC889 /* Menu1.swift */; };
+		161ABECA2C420F0900DDC889 /* MenuItem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161ABEC92C420F0900DDC889 /* MenuItem1.swift */; };
+		161ABECD2C42183F00DDC889 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161ABECC2C42183F00DDC889 /* Helper.swift */; };
 		1644E0842C3AD5DA00A3457B /* FetchedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644E0812C3AD5DA00A3457B /* FetchedObjects.swift */; };
 		1644E0852C3AD5DA00A3457B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644E0822C3AD5DA00A3457B /* Persistence.swift */; };
 		1644E0872C3AD67B00A3457B /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1644E0862C3AD67B00A3457B /* MenuList.swift */; };
@@ -24,6 +27,9 @@
 
 /* Begin PBXFileReference section */
 		16125ADF2C357BB200A496A9 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		161ABEC52C420EBF00DDC889 /* Menu1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu1.swift; sourceTree = "<group>"; };
+		161ABEC92C420F0900DDC889 /* MenuItem1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem1.swift; sourceTree = "<group>"; };
+		161ABECC2C42183F00DDC889 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		1644E0812C3AD5DA00A3457B /* FetchedObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedObjects.swift; sourceTree = "<group>"; };
 		1644E0822C3AD5DA00A3457B /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		1644E0862C3AD67B00A3457B /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
@@ -50,6 +56,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161ABEC42C420AFA00DDC889 /* MENU */ = {
+			isa = PBXGroup;
+			children = (
+				167CE4AB2C3367C0009392C4 /* Menu.swift */,
+				1644E0862C3AD67B00A3457B /* MenuList.swift */,
+				1644E0882C3AD68D00A3457B /* MenuItem.swift */,
+			);
+			path = MENU;
+			sourceTree = "<group>";
+		};
+		161ABECB2C420F8100DDC889 /* MENU1 (My attempt) */ = {
+			isa = PBXGroup;
+			children = (
+				161ABEC52C420EBF00DDC889 /* Menu1.swift */,
+				161ABEC92C420F0900DDC889 /* MenuItem1.swift */,
+			);
+			path = "MENU1 (My attempt)";
+			sourceTree = "<group>";
+		};
 		1644E0832C3AD5DA00A3457B /* Core Data Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,11 +108,11 @@
 				165CD0B42C21B73F00C07AFB /* Onboarding.swift */,
 				16C7F6BC2C377E660015CB67 /* UserProfile.swift */,
 				16125ADF2C357BB200A496A9 /* Home.swift */,
-				167CE4AB2C3367C0009392C4 /* Menu.swift */,
-				1644E0862C3AD67B00A3457B /* MenuList.swift */,
-				1644E0882C3AD68D00A3457B /* MenuItem.swift */,
-				167CE4AD2C339487009392C4 /* SelectedModal.swift */,
+				161ABEC42C420AFA00DDC889 /* MENU */,
 				1644E0832C3AD5DA00A3457B /* Core Data Support */,
+				167CE4AD2C339487009392C4 /* SelectedModal.swift */,
+				161ABECB2C420F8100DDC889 /* MENU1 (My attempt) */,
+				161ABECC2C42183F00DDC889 /* Helper.swift */,
 				165CD0A62C21B27800C07AFB /* Assets.xcassets */,
 				165CD0A82C21B27800C07AFB /* Preview Content */,
 			);
@@ -173,9 +198,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1644E08C2C3B28F600A3457B /* ExampleDatabase.xcdatamodeld in Sources */,
+				161ABECA2C420F0900DDC889 /* MenuItem1.swift in Sources */,
+				161ABECD2C42183F00DDC889 /* Helper.swift in Sources */,
 				167CE4AE2C339487009392C4 /* SelectedModal.swift in Sources */,
 				1644E0852C3AD5DA00A3457B /* Persistence.swift in Sources */,
 				165CD0A32C21B27500C07AFB /* Little_LemonApp.swift in Sources */,
+				161ABEC62C420EBF00DDC889 /* Menu1.swift in Sources */,
 				16C7F6BD2C377E660015CB67 /* UserProfile.swift in Sources */,
 				16125AE02C357BB200A496A9 /* Home.swift in Sources */,
 				167CE4AC2C3367C0009392C4 /* Menu.swift in Sources */,

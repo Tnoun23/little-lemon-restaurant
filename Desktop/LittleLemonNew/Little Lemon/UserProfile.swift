@@ -21,7 +21,7 @@ struct UserProfile: View {
             Text("Personal information")
             Image("profile-image-placeholder").resizable()
                 .frame(width: 50, height: 50)
-            Text("\(firstName)")
+            Text("\(String(describing: firstName))")
             Text("\(lastName)")
             Text("\(email)")
 
